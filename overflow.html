@@ -4,10 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Overflow</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 3px solid steelblue;
+        overflow: auto;
+      }
+      .ellipsis {
+        width: 200px;
+        border: 2px solid steelblue;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* text-overflow: clip; */
+      }
+      /* #box-1 {
+        overflow: auto;
+        overflow-x: hidden;
+      } */
+    </style>
   </head>
   <body>
+    <header>
+      <p
+        title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem similique quasi? Ratione odio tenetur placeat. Sint repudiandae ipsa inventore."
+        class="ellipsis"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem
+        similique quasi? Ratione odio tenetur placeat. Sint repudiandae ipsa
+        inventore.
+      </p>
+    </header>
     <section>
-      <div class="box">
+      <div id="box-1" class="box">
         <h3>My Text Box 1</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
