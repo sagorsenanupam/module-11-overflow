@@ -11,10 +11,13 @@
         border: 2px solid tomato;
         background-color: peachpuff;
         /* property name | duration | easing function | delay */
-        transition: width 5s linear 3s;
+        /* transition: width 5s linear 3s, background-color 3s ease-in 2s; */
+        transition: transform 2s;
       }
       .box:hover {
-        width: 400px;
+        transform: rotate(45deg) scale(1.5) translate(50px);
+        /* width: 400px; */
+        /* background-color: rebeccapurple; */
       }
     </style>
   </head>
